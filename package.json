@@ -1,21 +1,25 @@
 {
   "name": "co-fork",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "co wrapper for Nodes child_process modules fork method",
   "main": "index.js",
   "scripts": {
+    "precommit": "npm test",
+    "prepush": "npm test",
     "test": "if [ $(npm run isES6 | tail -n1)  == 'false' ]; then npm run harmony-test; else npm run transpile-test ; fi",
     "harmony-test": "node --harmony test",
     "transpile-test": "node test/index.transpile.js",
     "isES6": "node -p \"process.version < 'v0.11.00'\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "David Mark Clements",
+  "license": "MIT",
+  "repository": "https://github.com/davidmarkclements/co-fork",
   "dependencies": {
     "thunkify": "^2.1.2"
-  }, 
+  },
   "devDependencies": {
     "co": "^3.0.6",
+    "husky": "^0.5.3",
     "traceur": "0.0.50"
   }
 }
