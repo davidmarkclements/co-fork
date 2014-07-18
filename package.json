@@ -1,0 +1,21 @@
+{
+  "name": "co-fork",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "if [ $(npm run isES6 | tail -n1)  == 'false' ]; then npm run harmony-test; else npm run transpile-test ; fi",
+    "harmony-test": "node --harmony test",
+    "transpile-test": "node test/index.transpile.js",
+    "isES6": "node -p \"process.version < 'v0.11.00'\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "thunkify": "^2.1.2"
+  }, 
+  "devDependencies": {
+    "co": "^3.0.6",
+    "traceur": "0.0.50"
+  }
+}
