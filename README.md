@@ -85,7 +85,10 @@ npm test
 This will work seamlessly whether node version is
 above or below v0.11.x
 
+###
+Todo
 
+ * Removing an event listener, without access to the callback. hmm.
 
 
 
