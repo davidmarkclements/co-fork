@@ -1,6 +1,6 @@
 {
   "name": "co-fork",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "co wrapper for Nodes child_process modules fork method",
   "main": "index.js",
   "scripts": {
