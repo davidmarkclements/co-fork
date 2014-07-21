@@ -1,11 +1,3 @@
-if (process.version < 'v0.11.00') {
-  var Traceur = require('traceur');
-
-  Traceur.require.makeDefault(function(filename) {  
-    return !(/node_modules\/traceur/.test(filename));
-  });
-}
-
 var co = require('co');
 var thunkify = require('thunkify');
 var fork = require("child_process").fork;
