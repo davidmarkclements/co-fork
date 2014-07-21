@@ -15,10 +15,10 @@
   "license": "MIT",
   "repository": "https://github.com/davidmarkclements/co-fork",
   "dependencies": {
+    "co": "^3.0.6",
     "thunkify": "^2.1.2"
   },
   "devDependencies": {
-    "co": "^3.0.6",
     "husky": "^0.5.3",
     "traceur": "0.0.50"
   }
